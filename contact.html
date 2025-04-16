@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Javanese Wayang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .contact-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                              url('https://images.pexels.com/photos/1630661/pexels-photo-1630661.jpeg');
+        }
+        .form-input:focus {
+            border-color: #dc2626;
+            box-shadow: 0 0 0 1px #dc2626;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container px-6 py-4 mx-auto flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">Javanese Wayang</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-gray-600">Home</a>
+                <a href="about.html" class="hover:text-gray-600">About</a>
+                <a href="gallery.html" class="hover:text-gray-600">Gallery</a>
+                <a href="services.html" class="hover:text-gray-600">Services</a>
+                <a href="contact.html" class="text-red-600 font-medium">Contact</a>
+            </div>
+            <button class="md:hidden">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero bg-cover bg-center h-64 md:h-96 flex items-center">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold text-white">Contact Us</h1>
+            <p class="text-xl text-white mt-4">Get in touch to book performances or learn more</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Send Us a Message</h2>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Full Name</label>
+                            <input type="text" id="name" class="form-input w-full px-4 py-2 border rounded-lg focus:outline-none" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Email Address</label>
+                            <input type="email" id="email" class="form-input w-full px-4 py-2 border rounded-lg focus:outline-none" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="form-input w-full px-4 py-2 border rounded-lg focus:outline-none">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-gray-700 mb-2">Service Interested In</label>
+                            <select id="service" class="form-input w-full px-4 py-2 border rounded-lg focus:outline-none">
+                                <option value="">Select a service</option>
+                                <option value="performance">Traditional Performance</option>
+                                <option value="workshop">Workshop</option>
+                                <option value="education">Educational Program</option>
+                                <option value="puppets">Puppet Purchase</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+                            <textarea id="message" rows="5" class="form-input w-full px-4 py-2 border rounded-lg focus:outline-none" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition duration-300 w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Our Information</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-red-600 text-2xl mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Address</h3>
+                                <p class="text-gray-600">Wayang Cultural Center<br>Jl. Raya Solo - Yogyakarta<br>Central Java, Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-red-600 text-2xl mr-4 mt-1">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Phone</h3>
+                                <p class="text-gray-600">+62 123 4567 890<br>Mon-Fri: 9am-5pm</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-red-600 text-2xl mr-4 mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Email</h3>
+                                <p class="text-gray-600">info@javanewayang.com<br>inquiries@javanewayang.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-red-600 text-2xl mr-4 mt-1">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Office Hours</h3>
+                                <p class="text-gray-600">Monday - Friday: 9:00 - 17:00<br>Saturday: 10:00 - 15:00<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="mt-10">
+                        <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-3xl text-gray-600 hover:text-red-600">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-3xl text-gray-600 hover:text-red-600">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-3xl text-gray-600 hover:text-red-600">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="text-3xl text-gray-600 hover:text-red-600">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Find Us on Map</h2>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.102389017141!2d110.4066773152586!3d-7.779873794393992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59f1fb2f2b45%3A0x20986e2a9fb3a85!2sSolo%20Grand%20Mall!5e0!3m2!1sen!2sid!4v1621234567890!5m2!1sen!2sid" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        class="rounded-lg">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same structure as other pages) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Javanese Wayang</h3>
+                    <p>Preserving and promoting the rich tradition of Javanese shadow puppetry.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-red-400">Home</a></li>
+                        <li><a href="about.html" class="hover:text-red-400">About</a></li>
+                        <li><a href="gallery.html" class="hover:text-red-400">Gallery</a></li>
+                        <li><a href="contact.html" class="hover:text-red-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-red-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-red-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-red-400"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Javanese Wayang Heritage. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form validation would be added here
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will contact you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

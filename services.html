@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayang Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .services-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                              url('https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg');
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container px-6 py-4 mx-auto flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">Javanese Wayang</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-gray-600">Home</a>
+                <a href="about.html" class="hover:text-gray-600">About</a>
+                <a href="gallery.html" class="hover:text-gray-600">Gallery</a>
+                <a href="services.html" class="text-red-600 font-medium">Services</a>
+                <a href="contact.html" class="hover:text-gray-600">Contact</a>
+            </div>
+            <button class="md:hidden">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="services-hero bg-cover bg-center h-64 md:h-96 flex items-center">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold text-white">Our Services</h1>
+            <p class="text-xl text-white mt-4">Experience the magic of Wayang through our offerings</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Wayang Experiences</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    We offer authentic Wayang experiences for events, education, and cultural preservation.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                    <div class="text-red-600 text-4xl mb-4">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Traditional Performances</h3>
+                    <p class="text-gray-600 mb-4">
+                        Book authentic Wayang Kulit or Wayang Golek performances for your events with master dalangs.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Full night performances (8+ hours)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Abridged versions (2-3 hours)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Custom themes available</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                    <div class="text-red-600 text-4xl mb-4">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Workshops</h3>
+                    <p class="text-gray-600 mb-4">
+                        Learn the art of Wayang through our comprehensive workshop programs.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Puppet making (leather & wood)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Basic puppeteering techniques</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Storytelling & voice modulation</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                    <div class="text-red-600 text-4xl mb-4">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Educational Programs</h3>
+                    <p class="text-gray-600 mb-4">
+                        Cultural education programs for schools and institutions.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Interactive classroom sessions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Cultural immersion programs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Teacher training workshops</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                    <div class="text-red-600 text-4xl mb-4">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Puppet Sales</h3>
+                    <p class="text-gray-600 mb-4">
+                        Authentic, handcrafted Wayang puppets from master artisans.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Traditional character sets</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Custom puppet commissions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Starter kits for beginners</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                    <div class="text-red-600 text-4xl mb-4">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Digital Content</h3>
+                    <p class="text-gray-600 mb-4">
+                        High-quality Wayang recordings and educational materials.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Performance recordings</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Documentary films</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Educational video series</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-md p-6 transition duration-300">
+                    <div class="text-red-600 text-4xl mb-4">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Event Planning</h3>
+                    <p class="text-gray-600 mb-4">
+                        Complete cultural event planning services featuring Wayang.
+                    </p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Weddings & ceremonies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Corporate events</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Cultural festivals</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same structure as other pages) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Javanese Wayang</h3>
+                    <p>Preserving and promoting the rich tradition of Javanese shadow puppetry.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-red-400">Home</a></li>
+                        <li><a href="about.html" class="hover:text-red-400">About</a></li>
+                        <li><a href="gallery.html" class="hover:text-red-400">Gallery</a></li>
+                        <li><a href="contact.html" class="hover:text-red-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-red-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-red-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-red-400"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Javanese Wayang Heritage. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

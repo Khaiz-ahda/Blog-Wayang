@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayang Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .gallery-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                              url('https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg');
+        }
+        .gallery-item {
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container px-6 py-4 mx-auto flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">Javanese Wayang</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-gray-600">Home</a>
+                <a href="about.html" class="hover:text-gray-600">About</a>
+                <a href="gallery.html" class="text-red-600 font-medium">Gallery</a>
+                <a href="services.html" class="hover:text-gray-600">Services</a>
+                <a href="contact.html" class="hover:text-gray-600">Contact</a>
+            </div>
+            <button class="md:hidden">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gallery-hero bg-cover bg-center h-64 md:h-96 flex items-center">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-3xl md:text-5xl font-bold text-white">Wayang Gallery</h1>
+            <p class="text-xl text-white mt-4">Explore the beauty of traditional Javanese puppets</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.pexels.com/photos/1630661/pexels-photo-1630661.jpeg" 
+                         alt="Traditional Wayang Kulit Performance" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Wayang Kulit Performance</h3>
+                        <p class="text-gray-600">Traditional shadow puppet show with a banana log screen</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg" 
+                         alt="Wayang Puppet Collection" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Puppet Collection</h3>
+                        <p class="text-gray-600">Various characters from the Mahabharata epic</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg" 
+                         alt="Wayang Golek Puppets" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Wayang Golek</h3>
+                        <p class="text-gray-600">Three-dimensional wooden rod puppets from West Java</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg" 
+                         alt="Puppet Making Process" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Puppet Crafting</h3>
+                        <p class="text-gray-600">Artisan carving intricate details on buffalo hide</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.pexels.com/photos/1630661/pexels-photo-1630661.jpeg" 
+                         alt="Dalang Performing" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2">The Dalang</h3>
+                        <p class="text-gray-600">Master puppeteer manipulating the puppets</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+                    <img src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg" 
+                         alt="Gamelan Orchestra" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Gamelan Ensemble</h3>
+                        <p class="text-gray-600">Traditional musical accompaniment for Wayang</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same structure as other pages) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Javanese Wayang</h3>
+                    <p>Preserving and promoting the rich tradition of Javanese shadow puppetry.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-red-400">Home</a></li>
+                        <li><a href="about.html" class="hover:text-red-400">About</a></li>
+                        <li><a href="gallery.html" class="hover:text-red-400">Gallery</a></li>
+                        <li><a href="contact.html" class="hover:text-red-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-2xl hover:text-red-400"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-red-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-2xl hover:text-red-400"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Javanese Wayang Heritage. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
